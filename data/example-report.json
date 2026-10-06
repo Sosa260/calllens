@@ -1,0 +1,41 @@
+{
+  "mode": "Offline baseline",
+  "model": "rules-v1",
+  "rubric_version": "1.0",
+  "intent": "account_access",
+  "summary": "Customer opening: I cannot log in after resetting my password.",
+  "outcome": "resolved",
+  "outcome_evidence": "Customer: That worked. I can log in now.",
+  "rubric": [
+    {
+      "dimension": "acknowledgement",
+      "score": 1,
+      "evidence": "Agent: I understand you are locked out after the password reset. Please open the newest reset email and click the link once.",
+      "reason": "Acknowledgement phrase found; relevance needs human review."
+    },
+    {
+      "dimension": "action_clarity",
+      "score": 1,
+      "evidence": "Agent: I understand you are locked out after the password reset. Please open the newest reset email and click the link once.",
+      "reason": "An action phrase is present; completeness needs review."
+    },
+    {
+      "dimension": "outcome_confirmation",
+      "score": 2,
+      "evidence": "Customer: That worked. I can log in now.",
+      "reason": "Final customer statement indicates an outcome."
+    },
+    {
+      "dimension": "handoff",
+      "score": null,
+      "evidence": "",
+      "reason": "Handoff not established or not applicable."
+    }
+  ],
+  "flags": [],
+  "next_action": "Review evidence and confirm the outcome against business records.",
+  "coverage": 3,
+  "quality_percent": 66.7,
+  "created_at": "2026-09-24T04:59:29.502615+00:00",
+  "transcript": "Customer: I cannot log in after resetting my password.\nAgent: I understand you are locked out after the password reset. Please open the newest reset email and click the link once.\nCustomer: That worked. I can log in now.\nAgent: Glad you can access the account again."
+}
